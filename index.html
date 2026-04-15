@@ -111,8 +111,13 @@
     }
 
     .bee:nth-child(1) { animation: fly1 18s ease-in-out infinite 0s; }
-    .bee:nth-child(2) { animation: fly2 22s ease-in-out infinite 6s; }
-    .bee:nth-child(3) { animation: fly3 20s ease-in-out infinite 12s; }
+    .bee:nth-child(2) { animation: fly2 22s ease-in-out infinite 4s; }
+    .bee:nth-child(3) { animation: fly3 20s ease-in-out infinite 8s; }
+    .bee:nth-child(4) { animation: fly4 25s ease-in-out infinite 2s; width: 18px; height: 18px; }
+    .bee:nth-child(5) { animation: fly5 19s ease-in-out infinite 10s; width: 16px; height: 16px; }
+    .bee:nth-child(6) { animation: fly6 23s ease-in-out infinite 5s; }
+    .bee:nth-child(7) { animation: fly7 21s ease-in-out infinite 14s; width: 19px; height: 19px; }
+    .bee:nth-child(8) { animation: fly8 24s ease-in-out infinite 1s; width: 17px; height: 17px; }
 
     @keyframes fly1 {
       0%   { transform: translate(-5vw, 60vh) rotate(20deg) scaleX(-1); opacity: 0; }
@@ -141,6 +146,54 @@
       65%  { transform: translate(70vw, 70vh) rotate(8deg) scaleX(-1); opacity: 0.25; }
       95%  { opacity: 0; }
       100% { transform: translate(90vw, 105vh) rotate(-5deg) scaleX(-1); opacity: 0; }
+    }
+
+    @keyframes fly4 {
+      0%   { transform: translate(90vw, 80vh) rotate(-10deg); opacity: 0; }
+      5%   { opacity: 0.3; }
+      20%  { transform: translate(70vw, 45vh) rotate(15deg); }
+      45%  { transform: translate(40vw, 65vh) rotate(-5deg); opacity: 0.28; }
+      70%  { transform: translate(15vw, 30vh) rotate(10deg); }
+      95%  { opacity: 0; }
+      100% { transform: translate(-10vw, 15vh) rotate(-8deg); opacity: 0; }
+    }
+
+    @keyframes fly5 {
+      0%   { transform: translate(-8vw, 20vh) rotate(5deg) scaleX(-1); opacity: 0; }
+      5%   { opacity: 0.25; }
+      30%  { transform: translate(25vw, 75vh) rotate(-15deg) scaleX(-1); }
+      60%  { transform: translate(60vw, 45vh) rotate(8deg) scaleX(-1); opacity: 0.22; }
+      95%  { opacity: 0; }
+      100% { transform: translate(105vw, 65vh) rotate(-5deg) scaleX(-1); opacity: 0; }
+    }
+
+    @keyframes fly6 {
+      0%   { transform: translate(50vw, -8vh) rotate(12deg); opacity: 0; }
+      5%   { opacity: 0.32; }
+      25%  { transform: translate(75vw, 30vh) rotate(-8deg); }
+      50%  { transform: translate(45vw, 55vh) rotate(15deg); opacity: 0.27; }
+      75%  { transform: translate(20vw, 80vh) rotate(-12deg); }
+      95%  { opacity: 0; }
+      100% { transform: translate(-5vw, 95vh) rotate(5deg); opacity: 0; }
+    }
+
+    @keyframes fly7 {
+      0%   { transform: translate(110vw, 70vh) rotate(-20deg) scaleX(-1); opacity: 0; }
+      5%   { opacity: 0.26; }
+      35%  { transform: translate(55vw, 20vh) rotate(10deg) scaleX(-1); }
+      65%  { transform: translate(25vw, 50vh) rotate(-6deg) scaleX(-1); opacity: 0.24; }
+      95%  { opacity: 0; }
+      100% { transform: translate(-15vw, 35vh) rotate(12deg) scaleX(-1); opacity: 0; }
+    }
+
+    @keyframes fly8 {
+      0%   { transform: translate(10vw, 105vh) rotate(8deg); opacity: 0; }
+      5%   { opacity: 0.28; }
+      25%  { transform: translate(35vw, 60vh) rotate(-12deg); }
+      50%  { transform: translate(65vw, 85vh) rotate(6deg); opacity: 0.25; }
+      75%  { transform: translate(85vw, 40vh) rotate(-15deg); }
+      95%  { opacity: 0; }
+      100% { transform: translate(108vw, 10vh) rotate(10deg); opacity: 0; }
     }
 
     /* Horizontal logo lockup */
@@ -412,6 +465,56 @@
   <div class="accent-bar"></div>
 
   <!-- Flying bees -->
+  <div class="bee" aria-hidden="true">
+    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
+      <line x1="9.5" y1="7" x2="9.5" y2="15" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <line x1="13" y1="6.5" x2="13" y2="15.5" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <circle cx="6" cy="11" r="2.8" fill="#2A2118" opacity="0.5"/>
+      <ellipse cx="10" cy="5.5" rx="4.5" ry="2.8" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.4" transform="rotate(-15, 10, 5.5)"/>
+      <ellipse cx="14" cy="5" rx="4" ry="2.5" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.3" transform="rotate(-20, 14, 5)"/>
+    </svg>
+  </div>
+  <div class="bee" aria-hidden="true">
+    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
+      <line x1="9.5" y1="7" x2="9.5" y2="15" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <line x1="13" y1="6.5" x2="13" y2="15.5" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <circle cx="6" cy="11" r="2.8" fill="#2A2118" opacity="0.5"/>
+      <ellipse cx="10" cy="5.5" rx="4.5" ry="2.8" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.4" transform="rotate(-15, 10, 5.5)"/>
+      <ellipse cx="14" cy="5" rx="4" ry="2.5" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.3" transform="rotate(-20, 14, 5)"/>
+    </svg>
+  </div>
+  <div class="bee" aria-hidden="true">
+    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
+      <line x1="9.5" y1="7" x2="9.5" y2="15" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <line x1="13" y1="6.5" x2="13" y2="15.5" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <circle cx="6" cy="11" r="2.8" fill="#2A2118" opacity="0.5"/>
+      <ellipse cx="10" cy="5.5" rx="4.5" ry="2.8" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.4" transform="rotate(-15, 10, 5.5)"/>
+      <ellipse cx="14" cy="5" rx="4" ry="2.5" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.3" transform="rotate(-20, 14, 5)"/>
+    </svg>
+  </div>
+  <div class="bee" aria-hidden="true">
+    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
+      <line x1="9.5" y1="7" x2="9.5" y2="15" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <line x1="13" y1="6.5" x2="13" y2="15.5" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <circle cx="6" cy="11" r="2.8" fill="#2A2118" opacity="0.5"/>
+      <ellipse cx="10" cy="5.5" rx="4.5" ry="2.8" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.4" transform="rotate(-15, 10, 5.5)"/>
+      <ellipse cx="14" cy="5" rx="4" ry="2.5" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.3" transform="rotate(-20, 14, 5)"/>
+    </svg>
+  </div>
+  <div class="bee" aria-hidden="true">
+    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
+      <line x1="9.5" y1="7" x2="9.5" y2="15" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <line x1="13" y1="6.5" x2="13" y2="15.5" stroke="#2A2118" stroke-width="1" opacity="0.45"/>
+      <circle cx="6" cy="11" r="2.8" fill="#2A2118" opacity="0.5"/>
+      <ellipse cx="10" cy="5.5" rx="4.5" ry="2.8" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.4" transform="rotate(-15, 10, 5.5)"/>
+      <ellipse cx="14" cy="5" rx="4" ry="2.5" fill="none" stroke="#D4940A" stroke-width="0.6" opacity="0.3" transform="rotate(-20, 14, 5)"/>
+    </svg>
+  </div>
   <div class="bee" aria-hidden="true">
     <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="13" cy="11" rx="6.5" ry="4.5" fill="#D4940A" opacity="0.85"/>
